@@ -49,8 +49,8 @@ def run_game():
     # 开始游戏的主循环
     while True:
         # 监视键盘和鼠标事件
-        gf.check_events(ai_settings, screen, stats, sb, play_button,
-            ship, aliens, bullets)  # 检查玩家输入
+        gf.check_events(ai_settings, screen, stats, sb,
+            play_button, ship, aliens, bullets)  # 检查玩家输入
         if stats.game_active:  # 游戏处于活动状态才调用下列函数
             ship.update()  # 更新飞船位置
             # 子弹相关信息的更新
